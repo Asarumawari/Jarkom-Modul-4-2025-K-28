@@ -41,14 +41,14 @@
 
 ## Topologi
 
-![alt text](Images/topologi.png)
+![alt text](Image/topologi.png)
 
 
 ## Supernetting
 
 Berikut hasil penggabungan subnet yang telah dilakukan.
 
-![alt text](Images/supernetting.png)
+![alt text](Image/supernetting.png)
 
 
 ## Tabel Supernetting
@@ -84,7 +84,7 @@ Berikut tabel yang menampilkan seluruh hasil gabungan subnet dari supernetting, 
 
 ## Tree CIDR
 
-![alt text](Images/tree.png)
+![alt text](Image/tree.png)
 
 
 ## Tabel Subnetting 
