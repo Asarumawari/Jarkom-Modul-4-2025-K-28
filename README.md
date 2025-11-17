@@ -119,3 +119,26 @@ Prefix IP: 192.225
 | A24    | 192.225.10.44| 255.255.255.128| 192.225.10.47  | 192.225.10.45 - 192.225.10.46   |
 | A25    | 192.225.10.48| 255.255.255.128| 192.225.10.51  | 192.225.10.49 - 192.225.10.50   |
 
+
+## Perhitungan
+
+Contoh yang dipakai adalah subnet A5. Yang dicari: Prefix, Network ID, Broadcast, dan Range IP.
+
+### Prefix
+
+Total host subnet A5 adalah `120 host` ditambah dengan gateway. Maka diperlukan minimal `120 IP` yang usable. Kita dapat mencarinya dengan cara melihat kelipatan 2 mana yang paling dekat dengan minimum IP yang diperlukan subnet, yaitu 2" dengan n = 7 → 128 total IP. Dari sini, prefix dapat dicari dengan `32 - 7 = /25`.
+
+
+### Network ID (NID)
+
+Karena Network ID sendiri IP address yang akan menjadi identitas, maka NID nya adalah `192.225.9.32` alias address pertama.
+
+
+### Broadcast
+
+Sebaliknya dari NID, Broadcast address akan memakai address terakhir yaitu `192.225.9.159`
+
+
+### Range IP
+
+Dapat dicari dengan menambahkan `1` dengan NID dan mengurangi `1` dengan Broadcast, jarak IP usable yang didapat adalah `192.225.9.33 - 192.225.9.158`
